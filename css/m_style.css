@@ -9,8 +9,14 @@
     .home_icon_list li dl dt { font-size: 12px;}
     .home_icon_list li dl dt::after { width: 14px; height: 14px;}
     .home_icon_list li dl dd { display: none;}
+
+    /* index.html main slider */
+    .main_wrap .text_box { padding: 0 40px;}
 }
 @media screen and (max-width: 1240px) {
+    /* sub_slider */
+    .sub_slide_banner { height: auto;}
+
     /* altools page 1 */
     .download_cont .altools_explain { display: block;}
     .download_cont .altools_explain .tool_box { display: flex;}
@@ -24,6 +30,8 @@
     .sub_slide_banner .swiper-button-next.swiper2 { display: none;}
 
     .main_wrap .swiper { position: relative; height: auto;}
+
+    .ad_zero_bnr .bnr_wrap .bnr_box { padding: 0 40px 96px 40px;}
 }
 @media screen and (max-width: 1024px) {
     .pc { display: none !important;}
@@ -34,17 +42,16 @@
     /* common end */
 
     /* main_slide_banner */
+    .main_wrap .main_banner { height: 480px;}
+    .main_wrap .text_box { padding: 48px 20px 0; justify-content: flex-start; align-items: center;}
+    .control_box { justify-content: center;}
+
     .main { height: 480px;}
     .main .slide li { height: 480px;}
-    .main .slide li:nth-child(1) { background: url(../images/mob_mainslide_1.png) no-repeat center/cover;}
-    .main .slide li:nth-child(2) { background: url(../images/mob_mainslide_2.png) no-repeat center/cover;}
-    .main .slide li:nth-child(3) { background: url(../images/mob_mainslide_3.png) no-repeat center/cover;}
-    .main .slide li:nth-child(4) { background: url(../images/mob_mainslide_1.png) no-repeat center/cover;}
     .main .slide li .text_box { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); text-align: center;}
-    .main .slide li .text_box h2 { font-size: 24px;}
-    .main .slide li .text_box p { font-size: 15px;}
-    .main .slide li .text_box a { margin-top: 26px; font-size: 16px;}
-    .banner_btn { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);}
+    .main_wrap .text_box h2 { font-size: 24px; text-align: center;}
+    .main_wrap .text_box p { font-size: 15px; text-align: center;}
+    .main_wrap .text_box a { margin-top: 26px; font-size: 16px;}
     /* main_slide_banner end*/
 
     /* home_icon_list */
@@ -191,6 +198,9 @@
     .user_use .user_busis .busis_box dl:nth-of-type(2)::before { width: 32px; height: 32px;}
 }
 @media screen and (max-width: 767px) {
+    /* index_slider */
+    .main_wrap .text_box a { line-height: 52px;}
+
     /* sec_bnr */
     .sec_bnr .sec_bnr_text a { margin-top: 20px; font-size: 15px; line-height: 52px; padding: 0 24px;}
     /* sec_bnr end */

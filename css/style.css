@@ -39,13 +39,13 @@ header nav .main_menu > li .customer.on { display: block;}
 header nav .main_menu > li .customer li a { display: block; padding: 10px 1px; font-size: 14px; border-radius: 6px; transition: all .3s;}
 header nav .main_menu > li .customer li a:hover { background-color: rgba(139,149,161,.1);}
 
-header .ham_btn { display: block; width: 32px; height: 32px; background-color: lightcoral;}
+header .ham_btn { display: block; width: 32px; height: 32px;}
 /* header  end */
 
 /* mob_menu */
 .mobile_menu { display: none; position: fixed; z-index: 9999; width: 100%; height: 100%; min-height: 100vh; overflow-y: auto; left: 0; top: 0; background-color: #fff; padding: 0 20px 60px;}
 .mobile_menu .top { width: 100%; height: 60px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;}
-.mobile_menu .top .close { display: block; width: 32px; height: 32px; background: blanchedalmond;}
+.mobile_menu .top .close { display: block; width: 32px; height: 32px;}
 .mobile_menu .Login_btn.long { width: 100%; border-radius: 8px; line-height: 52px; background-color: #1a1a1a; margin-bottom: 20px;}
 
 .mobile_menu > ul > li { border-bottom: 1px solid #f2f4f6;}
@@ -72,11 +72,14 @@ header .ham_btn { display: block; width: 32px; height: 32px; background-color: l
 .main_wrap .main_banner { height: 600px; background-color: #ffc; overflow: hidden; position: relative; border-radius: 28px;}
 .main_wrap .swiper { position: relative; height: 360px;}
 .main_wrap.main_slide .swiper { position: relative; height: 100%;}
-.main_wrap .swiper-slide { position: relative;}
+.main_wrap .swiper-slide { position: relative; height: 100%;}
 .main_wrap .text_box { margin: 0 auto; max-width: 1120px; height: 100%; display: flex; justify-content: center; align-items: flex-start; flex-direction: column;}
 .main_wrap .text_box h2 { font-size: 48px; font-weight: 600;}
 .main_wrap .text_box p { font-size: 16px; margin-top: 20px; line-height: 1.6;}
 .main_wrap .text_box a { display: inline-block; margin-top: 48px; font-size: 18px; font-weight: 600; line-height: 66px; background-color: #fff; border-radius: 8px; padding: 0 40px 0 28px; background: #fff url(../images/right_arrow.png) no-repeat right 18px center;}
+
+.main_wrap .swiper-slide .slide_img_box { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;}
+.main_wrap .swiper-slide .slide_img_box img { width: 100%; height: 100%; object-fit: cover;}
 
 .main_wrap .swiper-wrapper .swiper-slide:nth-of-type(1) { background: url(../images/mainslide_1.png) no-repeat; background-size: 1520px;}
 .main_wrap .swiper-wrapper .swiper-slide:nth-of-type(2) { background: #ff0}
@@ -145,7 +148,7 @@ header .ham_btn { display: block; width: 32px; height: 32px; background-color: l
 /* .pc_altools end */
 
 /* sub_slide_banner */
-.sub_slide_banner { position: relative; margin: 28px auto 200px; overflow: hidden;}
+.sub_slide_banner { position: relative; margin: 28px auto 200px; overflow: hidden; height: 360px;}
 .sub_slide_banner .swiper-slide { width: calc(100% / 4); height: 360px;}
 .sub_slide_banner .swiper-slide a { display: block; width: 100%; height: 100%;}
 .sub_slide_banner .swiper-slide a img { width: 100%; height: 100%; object-fit: cover; border-radius: 28px;}
@@ -413,10 +416,13 @@ footer address p a { color: #0064d9;}
 .question .question_wrap { max-width: 1120px; margin: 0 auto;}
 .question .question_wrap h3 { font-size: 28px; font-weight: 600; margin-bottom: 26px;}
 .question .question_wrap ul { border-top: 2px solid #1a1a1a; border-bottom: 2px solid #1a1a1a;}
-.question .question_wrap ul li { font-size: 20px; padding: 20px 25px 20px 8px; font-weight: 600; border-bottom: 1px solid #d1d6db;}
+.question .question_wrap ul li { position: relative; font-size: 20px; padding: 20px 25px 20px 8px; font-weight: 600; border-bottom: 1px solid #d1d6db;}
+.question .question_wrap ul li::after { content: ""; display: block; width: 16px; height: 16px; background: url(../images/qustion_arrow.svg) no-repeat; position: absolute; right: 25px; top: 25px; transition: all .3s ease;}
+.question .question_wrap ul li.arrow_c::after { transform: rotate(180deg);}
 .question .question_wrap ul li:last-child { border: none;}
 .question .question_wrap ul li .answer { display: none; padding-top: 20px; font-size: 15px; line-height: 1.7;}
 .question .question_wrap ul li .answer.open { display: block;}
+
 /* question end */
 
 /* sub slide bnr */

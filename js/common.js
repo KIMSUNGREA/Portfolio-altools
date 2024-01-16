@@ -104,7 +104,8 @@ $(btn).click(function(){
 });
 // 로그인 페이지 END
 $(".question ul li").click(function(){
-    $(this).children().toggleClass("open")
+    $(this).toggleClass("arrow_c");
+    $(this).children().toggleClass("open");
 })
 
 $(".question_list li").click(function(){

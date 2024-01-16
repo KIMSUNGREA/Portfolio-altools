@@ -547,14 +547,33 @@
         var bnr_1 = $(".bnr_1").offset().top;
         var bnr = Math.floor(bnr_1);
         var com = bnr - 80;
+        var wh = $(window).width();
+
         
+            // $(window).resize( function() {
+            //     $(window).scroll(function(){
+            //     wh = $(window).width();
+            //     var scr = $(this).scrollTop();
+            //         if (wh > 1024) {
+            //             if (scr >= com) {
+            //                 console.log("if")
+            //                 $(".download_btn").addClass("on")
+            //             } else {
+            //                 $(".download_btn").removeClass("on")
+            //             }
+            //         } 
+            //     });      
+            // })
         $(window).scroll(function(){
             var scr = $(this).scrollTop();
-            if (scr >= com) {
-                $(".download_btn").addClass("on")
-            } else {
-                $(".download_btn").removeClass("on")
-            }
+            if (wh > 1024) {
+                if (scr >= com) {
+                    console.log("if")
+                    $(".download_btn").addClass("on")
+                } else {
+                    $(".download_btn").removeClass("on")
+                }
+            }       
         })
     </script>
 </body>
